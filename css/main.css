@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  width: 100%;
 }
 
 /*
@@ -92,15 +93,21 @@ body {
   width: 100%;
 }
 
+h2 {
+    text-transform: uppercase;
+    text-align: left;
+}
+
 /** HEADER SECTION **/
 .header {
   display: flex;
   flex-flow: column wrap;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .my-header {
-  display: flex;
-  flex-flow: column wrap;
+  padding: 10px;
 }
 
 /** Name Tag Area **/
@@ -141,17 +148,16 @@ body {
 
 .name-section p {
   font-family: 'Roboto Slab', serif;
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 
-.profile-pic {
+.profile-pic img {
   display: block;
-  align-content: flex-end;
-  align-content: center;
-  justify-content: center;
-  width: 50%;
-  padding: 15px;
-  margin: 0px auto;
+  width: 55%;
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /** Navigation Area **/
@@ -160,6 +166,8 @@ body {
   flex-flow: column wrap;
   width: 100%;
   margin: 0px;
+  padding: 0px;
+  line-height: 2em;
 }
 
 .navigation ul {
@@ -167,22 +175,24 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px;
 }
 
 .navigation ul li {
-  width: 100%;
   font-family: 'Roboto Slab', serif;
   color: #FDFFFC;
   font-weight: 900;
   font-size: 1.75em;
   text-align: center;
+  width: 95%;
   padding: 5px;
   list-style: none;
 }
 
-/** INTRODUCTION SECTION **/
-.intro,
+/** INTRO SECTION **/
+.about,
 .welcome,
 .why-frontend,
 .interests {
@@ -190,27 +200,45 @@ body {
   flex-flow: column wrap;
 }
 
-.intro {
+.about {
   background-color: #FDFFFC;
   width: 100%;
   color: #011627;
-  padding: 0px 10px;
+  padding: 0px 20px;
 }
 
-.intro h2,
-.intro h3,
-.intro p {
+.about h2,
+.about h3,
+.about p {
   font-family: 'Roboto Slab', serif;
   overflow-wrap: break-word;
+}
+
+.about h3 {
+  margin: 0px;
+}
+
+.about p {
+  padding-right: 25px;
 }
 
 .welcome,
 .why-frontend,
 .interests  {
   width: 90%;
+  margin-left: 10px;
 }
 
 /** SKILLS SECTION **/
+.skills {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 15px 20px 15px;
+}
+
 .skills,
 .skills-frontend,
 .skills-other {
@@ -220,33 +248,32 @@ body {
 
 .skills-frontend,
 .skills-other {
-}
-
-.skills-frontend h2,
-.skills-frontend h3,
-.skills-other h3 {
-  text-align: center;
-}
-
-.skills-frontend-table,
-.skills-frontend-table tr,
-.skills-frontend-table td {
-  border: 0px;
-  text-align: center;
-}
-
-.skills-frontend-table {
-  border-collapse: collapse;
-  width: 95%;
-}
-
-.skills-other ul {
+  margin: 10px 0px;
   padding: 0px;
+  width: 95%
 }
 
-.skills-other ul li {
-  list-style-type: none;
-  text-align: center;
+.skills h2,
+.skills h3 {
+  text-align: left;
+  margin: 0px;
+  padding: 10px;
+}
+
+.skills-frontend-table, 
+.skills-other-table {
+  margin: 0px 10px;
+  padding: 0px;
+  width: 100%;
+}
+
+.skills table,
+.skills tr,
+.skills td {
+  border: 0px;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 5px 10px;
 }
 
 /** PROJECTS SECTION **/
@@ -254,15 +281,91 @@ body {
   background-color: #FDFFFC;
   width: 100%;
   color: #011627;
-  padding: 0px 10px;
   font-family: 'Roboto Slab', serif;
   color: #011627;
+  padding: 15px 0px;
+}
+
+.projects h2,
+.projects h3,
+.projects h4,
+.projects p {
+  margin: 0px;
+  overflow-wrap: break-word;
+}
+
+.projects h2 {
+  padding: 10px 15px 0px 15px;
+}
+
+.projects h3 {
+  padding: 25px 15px 5px 15px;
+  color: #2EC4B6;
+}
+
+.projects h4 {
+  padding: 5px 15px;
+  font-style: italic;
+  width: 90%;
+}
+
+.projects p {
+  padding: 0px 15px 10px 15px;
+  width: 90%;
+}
+
+.projects img {
+  width: 90%;
+  padding: 10px;
+}
+
+.sticky-notes-info,
+.note-generator-info,
+.guess-the-word-info {
+  border-bottom: 2px solid #011627;
+  padding-bottom: 15px;
+  padding-left: 5px;
+}
+
+.projects-code-link {
+  font-style: normal;
+  color: #011627;
+  font-size: 18px;
 }
 
 /** FOOTER SECTION **/
 footer {
   font-family: 'Roboto Slab', serif;
   color: #FDFFFC;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: #FDFFFC;
+}
+
+.contact-info,
+.contact-social-icons,
+.contact-location {
+  width: 90%;
+}
+
+.contact-social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0px 20px;
+  padding: 0px;
+}
+
+.contact-social-icons i {
+  text-align: left;
+  font-size: 2em;
+  padding: 0px 15px;
 }
 
 /* ==========================================================================
@@ -353,9 +456,65 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+/*** RESPONSIVE DESIGN
+  /**TABLET STYLING
+  @media only screen and (min-width: 768px) {
+    /*== HEADER SECTION
+    .header {
+      flex-flow: row wrap;
+      justify-content: center;
+      padding 10px 20px;
+    }
+
+    .name-section,
+    .profile-pic,
+    .navigation {
+      width: 30%;
+      padding 5px;
+    }
+
+    .profile-pic img {
+      visibility: hide;
+      width: 100%;
+    }
+
+    .navigation {
+      margin: 0px;
+      flex-flow: row wrap;
+    }
+
+    /*== SKILLS SECTION
+
+    /*== PROJECTS SECTION
+    .projects {
+      padding: 0px 20px;
+    }
+
+    /*== FOOTER SECTION
+    footer {
+      flex-flow: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    footer div {
+      padding: 10px;
+      width: 30%;
+    }
+
+    footer h2 {
+    }
+    
+  }
+    
+  /** DESKTOP STYLING
+  @media only screen and (min-width: 1200px) {
+    /*== HEADER SECTION ==*/
+    /*== SKILLS SECTION ==*/
+    /*== PROJECTS SECTION ==*/
+    /*== FOOTER SECTION ==
+  } 
+  */
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

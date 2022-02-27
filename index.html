@@ -29,38 +29,37 @@
     
     <!-- FontAwesome CDN version 5.5 -->
     <script src="https://kit.fontawesome.com/44f201c5a9.js" crossorigin="anonymous"></script>
-  
+
   </head>
 
   <body class="site">
       <header>
         <div class="header">
-            <div class="my-header">
                 <!-- Name and Job Title -->
                 <div class="name-section">
                     <h1>Jeni Williams</h1>
                     <h2>aka JeniDub</h2>
                     <p>Front End Engineer</p>
+                    <p>Ready to Join Your Team</p>
                 </div>
-
-                <!-- Profile Picture -->
-                <img class="profile-pic" src="./img/profile-pic.JPG" alt="Jeni Williams profile picture">
-            </div>
-
-            <!-- Navigation Menu -->
-            <nav class="navigation">
-                <ul>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Project List</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+                <div class="profile-pic">
+                    <!-- Profile Picture -->
+                    <img src="./img/profile-pic.JPG" alt="Jeni Williams profile picture">
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="navigation">
+                    <ul>
+                        <li>About</li>
+                        <li>Skills</li>
+                        <li>Projects</li>
+                        <li>Contact Info</li>
+                    </ul>
+                </nav>
+         </div>
+     </header>
 
       <main>
-          <div class="intro">
+          <div class="about">
             <section class="welcome">
                 <h2>ABOUT</h2>
                 <h3>Who Is JeniDub?</h3>
@@ -110,48 +109,93 @@
 
                 <div class="skills-other">
                     <h3>Other Skills and Tools</h3>
-                    <ul>
-                        <li>Git/GitHub/GitHub Pages</li>
-                        <li>Visual Studio Code</li>
-                        <li>Codesandbox</li>
-                        <li>Terminal</li>
-                        <li>Adobe Creative Suite</li>
-                    </ul>
+                    <table class="skills-other-table">
+                        <tr>
+                            <td>Adobe Creative Suite</td>
+                            <td>Git</td>
+                        </tr>
+                        <tr>
+                            <td>GitHub</td>
+                            <td>GitHub Pages</td>
+                        </tr>
+                        <tr>
+                            <td>Terminal</td>
+                            <td>Visual Studio Code</td>
+                        </tr>
+                    </table>
                 </div>
-
-
-
           </div>
 
           <div class="projects">
-            <h3>Projects List</h3>
-            <div class="projects-info">Sticky Notes UI</div>
-            <div class="projects-info">Name Tag Generator</div>
-            <div class="projects-info">Guess the Word Game</div>
-            <div class="projects-info">4Ward Website Build</div>
+            <h2>Projects List</h2>
+            <div class="projects-info sticky-notes-info">
+                <h3>Project #1: Sticky Notes UI</h3>
+                <h4><a class="projects-code-link" href="https://codesandbox.io/s/super-sticky-notes-capstone-project-s3cjny" target="_blank">Click Here to View the Code</a></h4>
+                <a href="https://codesandbox.io/s/super-sticky-notes-capstone-project-s3cjny" target="_blank"><img src="./img/sticky-notes.png" alt="Screenshot of the Sticky Notes UI"></a>
+                <h4>Skills and Tools Used: React, JSX, CSS, Codesandbox, Lifecycle</h4>
+                <p>The Sticky Notes UI project was a React project that includes components 
+                    named App.js, Header.js, Note.js, and Notes.js components. It allows users 
+                    to add new notes, edit the notes, search the notes list and delete notes. 
+                    It also saves the state information in case users leave the site 
+                    accidentally or refresh the browser.</p>
+            </div>
+
+            <div class="projects-info note-generator-info">
+                <h3>Project #2: Name Tag Generator UI</h3>
+                <h4><a class="projects-code-link" href="https://codesandbox.io/s/name-tag-generator-with-text-inputs-and-delete-with-lifecycle-bhrhuk" target="_blank">Click Here to View the Code</a></h4>
+                <a href="https://codesandbox.io/s/name-tag-generator-with-text-inputs-and-delete-with-lifecycle-bhrhuk" target="_blank"><img src="./img/name-tag-generator.png" alt="Screenshot of the Note Generator UI"></a>
+                <h4>Skills and Tools Used: React, JSX, CSS, Codesandbox, Lifecycle</h4>
+                <p>In the Name Tag Generator UI, users are able to create new and delete nametags 
+                    and see the list of nametags. I wrote the following components: App.js, NameTag.js, 
+                    NameTagList.js, and UserInput.js. I used the Skillcrush CSS template as the design 
+                    template.</p>
+            </div>
+
+            <div class="projects-info guess-the-word-info">
+                <h3>Project #3: Guess the Word Game</h3>
+                <h4><a class="projects-code-link" href="https://jenidub.github.io/guess-the-word-game/" target="_blank">Click Here to View the Code</h4>
+                <a href="https://jenidub.github.io/guess-the-word-game/" target="_blank"><img src="./img/guess-the-word.png" alt="Screenshot of the Guess the Word Game"></a>
+                <h4>Skills and Tools Used: HTML, CSS, Javascript, APIs, Visual Studio Code, Git, GitHub 
+                    Pages, Chrome DevTools</h4>
+                <p>The Guess the Word game is a hangman-style game where the user has to guess a random 
+                    word given the number of letters. The user gets 8 guesses to get the word correct. 
+                    The project was written using HTML, CSS, and Javascript.</p>
+            </div>
+
+            <div class="projects-info 4ward-website-info">
+                <h3>Project #4: 4Ward Website Build</h3>
+                <h4><a class="projects-code-link" href="https://jenidub.github.io/4ward-afterschool/" target="_blank">Click Here to View the Code</h4>
+                <a href="https://jenidub.github.io/4ward-afterschool/" target="_blank"><img src="./img/4ward-build.png" alt="Screenshot of 4Ward Website Build"></a>
+                <h4>Skills and Tools Used: HTML, CSS, Javascript, Responsive Design, Bootstrap, Visual
+                    Studio Code, Git, GitHub Pages, Chrome DevTools</h4>
+                <p>The 4Ward Website project is the future home page for my educational venture named 
+                    4Ward based in Northern California. The design was created from scratch with HTML, 
+                    CSS, and Javascript using Bootstrap and Flexbox theory.</p>
+            </div>
           </div>
 
           <footer>
-              <div class="contact-info">
-                <h3>Contact Me</h3>
-                <p>Mobile: 510-506-4915</p>
-                <p><span class="link">Email: stanfordjeni@gmail.com</p></span>
+              <div class="footer-title">
+                <h2>Contact Me</h2>
               </div>
 
-              <div class="contact-social-icons">
-                  <ul>
-                      <li>LinkedIn</li>
-                      <li>GitHub</li>
-                      <li>Codesandbox</li>
-                  </ul>
-              </div>
-
-              <div class="contact-location">
-                  <p>San Leandro, California</p>
-                  <p>Pacific Time Zone</p>
-              </div>
-
-        </footer>
-
+            <div class="footer-info">
+                <div class="contact-info">
+                    <a href="tel:5105064915" target="_blank"><p>Mobile: 510-506-4915</p></a>
+                    <a href="mailto:stanfordjeni@gmail.com" target="_blank"><p>Email: stanfordjeni@gmail.com</p></a>
+                  </div>
+    
+                  <div class="contact-social-icons">
+                      <a href="https://www.linkedin.com/in/jwjenidub/" target="_blank"><p><i class="fa-brands fa-linkedin-in"></i></p></a>
+                      <a href="https://jenidub.github.io/github-repo-gallery/" target="_blank"><p><i class="fa-brands fa-github"></i></p></a>
+                      <a href="https://codesandbox.io/u/jenidub" target="_blank"><p><i class="fa-solid fa-code"></i></p></a>
+                  </div>
+    
+                  <div class="contact-location">
+                      <p>Home Base: San Leandro, California</p>
+                      <p>Time Zone: Pacific</p>
+                  </div>
+            </div>
+           </footer>
       </main>
   </body>
