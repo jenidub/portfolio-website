@@ -204,7 +204,6 @@ h2 {
   background-color: #FDFFFC;
   width: 100%;
   color: #011627;
-  padding: 0px 20px;
 }
 
 .about h2,
@@ -225,8 +224,8 @@ h2 {
 .welcome,
 .why-frontend,
 .interests  {
-  width: 90%;
   margin-left: 10px;
+  padding: 0px 10px;
 }
 
 /** SKILLS SECTION **/
@@ -262,7 +261,7 @@ h2 {
 
 .skills-frontend-table, 
 .skills-other-table {
-  margin: 0px 10px;
+  margin: 0px 5px;
   padding: 0px;
   width: 100%;
 }
@@ -351,7 +350,6 @@ footer a {
 .contact-info,
 .contact-social-icons,
 .contact-location {
-  width: 90%;
 }
 
 .contact-social-icons {
