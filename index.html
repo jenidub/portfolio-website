@@ -49,17 +49,17 @@
                 <!-- Navigation Menu -->
                 <nav class="navigation">
                     <ul>
-                        <li>About</li>
-                        <li>Skills</li>
-                        <li>Projects</li>
-                        <li>Contact Info</li>
+                        <a href="#about"><li>About</li></a>
+                        <a href="#skills"><li>Skills</li></a>
+                        <a href="#projects"><li>Projects</li></a>
+                        <a href="#contact-info"><li>Contact Info</li></a>
                     </ul>
                 </nav>
          </div>
      </header>
 
       <main>
-          <div class="about">
+          <div class="about" id="about">
             <section class="welcome">
                 <h2>ABOUT</h2>
                 <h3>Who Is JeniDub?</h3>
@@ -87,19 +87,19 @@
             </section>
           </div>
 
-          <div class="skills">
+          <div class="skills" id="skills">
                 <div class="skills-frontend">
                     <h2>SKILLS</h2>
                     <h3>Frontend Skills List</h3>
-                    <table class="skills-frontend-table">
+                    <table class="skills-table">
                         <tr>
-                            <td>HTML/CSS</td>
+                            <td>HTML & CSS</td>
                             <td>Javascript</td>
                             <td>React</td>
                         </tr>
                         <tr>
                             <td>APIs</td>
-                            <td>Responsive Sites</td>
+                            <td>Responsive Design</td>
                             <td>Bootstrap</td>
                         </tr>
                     </table>
@@ -107,7 +107,7 @@
 
                 <div class="skills-other">
                     <h3>Other Skills and Tools</h3>
-                    <table class="skills-other-table">
+                    <table class="skills-table">
                         <tr>
                             <td>Adobe Creative</td>
                             <td>Git</td>
@@ -122,7 +122,7 @@
                 </div>
           </div>
 
-          <div class="projects">
+          <div class="projects" id="projects">
             <h2>Projects List</h2>
             <div class="projects-info sticky-notes-info">
                 <h3>Project #1: Sticky Notes UI</h3>
@@ -170,28 +170,25 @@
             </div>
           </div>
 
-          <footer>
-              <div class="footer-title">
-                <h2>Contact Me</h2>
-              </div>
-
-            <div class="footer-info">
-                <div class="contact-info">
-                    <a href="tel:5105064915" target="_blank"><p>Mobile: 510-506-4915</p></a>
-                    <a href="mailto:stanfordjeni@gmail.com" target="_blank"><p>Email: stanfordjeni@gmail.com</p></a>
-                  </div>
-    
-                  <div class="contact-social-icons">
-                      <a href="https://www.linkedin.com/in/jwjenidub/" target="_blank"><p><i class="fa-brands fa-linkedin-in"></i></p></a>
-                      <a href="https://jenidub.github.io/github-repo-gallery/" target="_blank"><p><i class="fa-brands fa-github"></i></p></a>
-                      <a href="https://codesandbox.io/u/jenidub" target="_blank"><p><i class="fa-solid fa-code"></i></p></a>
-                  </div>
-    
-                  <div class="contact-location">
-                      <p>Home Base: San Leandro, CA</p>
-                      <p>Time Zone: Pacific</p>
-                  </div>
-            </div>
-           </footer>
+          <footer id="contact-info">
+            <h2>Contact Info</h2>
+                <div class="contact-info-div">
+                    <div class="contact-info">
+                        <a href="tel:5105064915" target="_blank"><p>Mobile: 510-506-4915</p></a>
+                        <a href="mailto:stanfordjeni@gmail.com" target="_blank"><p>Email: stanfordjeni@gmail.com</p></a>
+                    </div>
+        
+                    <div class="contact-social-icons">
+                        <a href="https://www.linkedin.com/in/jwjenidub/" target="_blank"><p><i class="fa-brands fa-linkedin-in"></i></p></a>
+                        <a href="https://jenidub.github.io/github-repo-gallery/" target="_blank"><p><i class="fa-brands fa-github"></i></p></a>
+                        <a href="https://codesandbox.io/u/jenidub" target="_blank"><p><i class="fa-solid fa-code"></i></p></a>
+                    </div>
+        
+                    <div class="contact-location">
+                        <p>Home Base: San Leandro, CA</p>
+                        <p>Time Zone: Pacific</p>
+                    </div>
+                </div>
+        </footer>
       </main>
   </body>

@@ -102,8 +102,8 @@ h2 {
 .header {
   display: flex;
   flex-flow: column wrap;
-  margin-bottom: 20px;
   width: 100%;
+  padding: 20px;
 }
 
 .my-header {
@@ -172,7 +172,7 @@ h2 {
 
 .navigation ul {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -204,6 +204,7 @@ h2 {
   background-color: #FDFFFC;
   width: 100%;
   color: #011627;
+  padding: 20px;
 }
 
 .about h2,
@@ -230,12 +231,13 @@ h2 {
 
 /** SKILLS SECTION **/
 .skills {
+  width: 100%;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 15px 15px 20px 15px;
+  padding: 20px;
 }
 
 .skills,
@@ -259,11 +261,11 @@ h2 {
   padding: 10px;
 }
 
-.skills-frontend-table, 
-.skills-other-table {
+.skills-table {
   margin: 0px 5px;
   padding: 0px;
   width: 100%;
+  table-layout: fixed;
 }
 
 .skills table,
@@ -282,7 +284,7 @@ h2 {
   color: #011627;
   font-family: 'Roboto Slab', serif;
   color: #011627;
-  padding: 15px 0px;
+  padding: 20px;
 }
 
 .projects h2,
@@ -333,7 +335,8 @@ h2 {
 }
 
 /** FOOTER SECTION **/
-footer {
+footer,
+.contact-info-div {
   font-family: 'Roboto Slab', serif;
   color: #FDFFFC;
   width: 100%;
@@ -343,13 +346,12 @@ footer {
   justify-content: center;
 }
 
-footer a {
-  color: #FDFFFC;
+footer {
+  padding: 20px;
 }
 
-.contact-info,
-.contact-social-icons,
-.contact-location {
+footer a {
+  color: #FDFFFC;
 }
 
 .contact-social-icons {
@@ -454,65 +456,85 @@ footer a {
    Modify as content requires.
    ========================================================================== */
 
-/*** RESPONSIVE DESIGN
-  /**TABLET STYLING
+/*** RESPONSIVE DESIGN ***/
+  /*== TABLET STYLING ==*/
   @media only screen and (min-width: 768px) {
-    /*== HEADER SECTION
+    /*== Header Section ==*/
     .header {
       flex-flow: row wrap;
       justify-content: center;
-      padding 10px 20px;
-    }
-
-    .name-section,
-    .profile-pic,
-    .navigation {
-      width: 30%;
-      padding 5px;
+      width: 95%;
     }
 
     .profile-pic img {
       visibility: hide;
-      width: 100%;
+      width: 40%;
     }
 
-    .navigation {
-      margin: 0px;
+    .navigation ul {
       flex-flow: row wrap;
+      justify-content: space-evenly;
+      padding: 0px 10px;
+    }
+    
+    .navigation ul li {
+      padding: 20px;
     }
 
-    /*== SKILLS SECTION
+    /*== About Section ==*/
+    .about {
+      padding: 20px;
+    }
 
-    /*== PROJECTS SECTION
+    /*== Skills Section ==*/
+    .skills {
+      padding: 20px;
+      width: 95%;
+    }
+
+    /*== Projects Section ==*/
     .projects {
-      padding: 0px 20px;
+      padding: 20px;
     }
 
-    /*== FOOTER SECTION
+    .projects-info img {
+      width: 60%;
+    }
+
+    /*== Footer Section ==*/
     footer {
-      flex-flow: row;
-      align-items: center;
-      justify-content: flex-start;
+      margin-right: 20px;
+    }
+    
+    .contact-info-div {
+      flex-flow: row wrap;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      width: 85%;
     }
 
-    footer div {
-      padding: 10px;
-      width: 30%;
+    footer h2,
+    footer p {
+      text-align: center;
+      margin: 5px 0px;
     }
 
     footer h2 {
+      padding-left: 15px;
     }
+
+    .contact-social-icons {
+      padding: 10px 0px;
+    }
+
     
-  }
-    
-  /** DESKTOP STYLING
+  /** DESKTOP STYLING **/
   @media only screen and (min-width: 1200px) {
-    /*== HEADER SECTION ==*/
-    /*== SKILLS SECTION ==*/
-    /*== PROJECTS SECTION ==*/
-    /*== FOOTER SECTION ==
-  } 
-  */
+    /*== Header Section ==*/
+    /*== Skills Section ==*/
+    /*== Projects Section ==*/
+    /*== Footer Section ==*/
+  }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
