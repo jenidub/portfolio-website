@@ -630,12 +630,13 @@ footer a {
 
     .navigation ul {
       flex-flow: row wrap;
-      justify-content: space-between;
+      justify-content: flex-start;
+      margin: 0px;
     }
 
     .navigation ul a {
       font-size: 2em;
-      padding: 10px 20px;
+      padding: 20px;
     }
 
     /*== About Section ==*/
