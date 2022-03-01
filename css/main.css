@@ -107,8 +107,10 @@ h3 {
 .header {
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
   width: 100%;
   padding: 20px;
+  overflow: hidden;
 }
 
 /** Name Tag Area **/
@@ -117,8 +119,7 @@ h3 {
   flex-flow: column wrap;
   align-content: center;
   justify-content: center;
-  margin-top: 20px;
-  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .name-section h1,
@@ -160,8 +161,7 @@ h3 {
   width: 100%;
   margin: 0px;
   line-height: 2em;
-  padding-right: 20px;
-
+  padding-left: 20px;
 }
 
 .navigation ul {
@@ -224,13 +224,14 @@ h3 {
   margin-right: auto;
   display: block;
   padding-right: 10px;
+  padding-left: 20px;
 }
 
 .welcome,
 .why-frontend,
 .interests  {
   margin-left: 10px;
-  padding: 0px 10px;
+  padding-left: 30px;
 }
 
 /** SKILLS SECTION **/
@@ -254,8 +255,7 @@ h3 {
 .skills-frontend,
 .skills-other {
   margin: 10px 0px;
-  padding: 0px;
-  width: 95%
+  padding-left: 30px;
 }
 
 .skills h2,
@@ -300,7 +300,7 @@ h3 {
 }
 
 .projects h2 {
-  padding: 10px 15px 0px 15px;
+  padding: 10px 15px 0px 35px;
 }
 
 .projects h3 {
@@ -309,7 +309,7 @@ h3 {
 }
 
 .projects h4 {
-  padding: 5px 15px;
+  padding: 15px;
   font-style: italic;
   width: 90%;
 }
@@ -326,10 +326,17 @@ h3 {
 
 .sticky-notes-info,
 .note-generator-info,
-.guess-the-word-info {
+.guess-the-word-info,
+.forward-website-info {
   border-bottom: 2px solid #011627;
   padding-bottom: 15px;
-  padding-left: 5px;
+  padding-left: 20px;
+}
+
+.forward-website-info {
+  border: none;
+  padding-bottom: 0px;
+  padding-left: 20px;
 }
 
 .projects-code-link {
@@ -357,6 +364,10 @@ footer {
 
 footer a {
   color: #FDFFFC;
+}
+
+.contact-info-div {
+  padding: 10px;
 }
 
 .contact-social-icons {
@@ -496,6 +507,10 @@ footer a {
     }
 
     /*== About Section ==*/
+    .about {
+      padding: 30px;
+    }
+
     .profile-pic,
     .about-info {
       margin-left: 10px;
@@ -522,7 +537,7 @@ footer a {
 
     /*== Projects Section ==*/
     .projects {
-      padding: 20px;
+      padding: 30px;
     }
 
     .projects-info img {
@@ -538,7 +553,7 @@ footer a {
     footer {
       width: 90%;
       margin: 0px;
-      padding-left: 30px;
+      padding-left: 60px;
     }
 
     .contact-info-div {
@@ -606,7 +621,7 @@ footer a {
       flex-flow: row;
       justify-content: space-evenly;
       align-items: center;
-      padding: 20px 70px 30px 70px;
+      padding: 20px;
     }
 
     .name-section {
@@ -622,7 +637,7 @@ footer a {
       justify-content: space-between;
     }
 
-    .navigation ul li {
+    .navigation ul a {
      font-size: 2em;
      padding: 10px 20px;
     }
@@ -654,7 +669,7 @@ footer a {
 
     /*== Skills Section ==*/
     .skills {
-      padding: 40px 20px;
+      padding: 30px 20px 30px 70px;
     }
 
     .skills td {
@@ -676,6 +691,11 @@ footer a {
     .projects h4 {
       font-size: 1.25em;
       padding: 10px 15px;
+    }
+
+    #guess-screenshot,
+    #forward-screenshot {
+      width: 50%;
     }
 
     /*== Footer Section ==*/
