@@ -107,6 +107,7 @@ h3 {
 .header {
   display: flex;
   flex-flow: column wrap;
+  width: 100%;
   padding: 20px;
 }
 
@@ -173,7 +174,7 @@ h3 {
   padding: 0px;
 }
 
-.navigation ul li {
+.navigation ul a {
   font-family: 'Roboto Slab', serif;
   color: #FDFFFC;
   font-weight: 900;
