@@ -15,7 +15,6 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  width: 100%;
 }
 
 /*
@@ -88,9 +87,18 @@ textarea {
    Portfolio Website Custom Styles
    ========================================================================== */
 
+* {
+  box-sizing: border-box;
+}
+
+body, 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #011627; 
-  width: 100%;
+  background-color: #011627;
 }
 
 h2 {
@@ -107,10 +115,7 @@ h3 {
 .header {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  width: 100%;
-  padding: 20px;
-  overflow: hidden;
+  justify-content: space-between;
 }
 
 /** Name Tag Area **/
@@ -119,7 +124,7 @@ h3 {
   flex-flow: column wrap;
   align-content: center;
   justify-content: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 .name-section h1,
@@ -198,9 +203,8 @@ h3 {
 
 .about {
   background-color: #FDFFFC;
-  width: 100%;
   color: #011627;
-  padding: 30px;
+  padding: 10px;
 }
 
 .about h2,
@@ -239,7 +243,7 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 0px;
 }
 
 .skills,
@@ -251,7 +255,7 @@ h3 {
 
 .skills-frontend,
 .skills-other {
-  margin: 10px 0px;
+  margin: 0px;
   padding-left: 30px;
 }
 
@@ -285,7 +289,7 @@ h3 {
   color: #011627;
   font-family: 'Roboto Slab', serif;
   color: #011627;
-  padding: 30px;
+  padding: 10px;
 }
 
 .projects h2,
@@ -328,6 +332,11 @@ h3 {
   padding-bottom: 15px;
 }
 
+.sticky-notes-info,
+.guess-the-word-info {
+  margin-right: 10px;
+}
+
 .projects-code-link {
   font-style: normal;
   color: #011627;
@@ -348,8 +357,9 @@ footer,
 }
 
 footer {
-  padding: 20px;
+  padding: 0px;
   overflow: hidden;
+  padding: 5px;
 }
 
 footer a {
@@ -526,19 +536,32 @@ footer a {
 
     /*== Projects Section ==*/
     .projects {
-      padding: 30px;
+      padding: 20px;
     }
 
+    .projects-grid-row {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .projects-grid-row-items {
+      width: 45%;
+      border: none;
+    }
+
+
     .projects-info img {
-      width: 60%;
+      width: 33%;
     }
 
     .projects-info {
-      padding: 0px 30px;
+      padding: 0px 10px;
     }
 
     .projects h2 {
-      padding-left: 50px;
+      padding-left: 30px;
     }
 
     .projects p {
