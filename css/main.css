@@ -320,9 +320,13 @@ h3 {
   width: 90%;
 }
 
-.projects img {
+.projects-screenshot {
   width: 90%;
   padding: 10px;
+}
+
+.projects img {
+  width: 100%;
 }
 
 .sticky-notes-info,
@@ -555,9 +559,11 @@ footer a {
       border: none;
     }
 
-
-    .projects-info img {
-      width: 33%;
+    .projects-screenshot {
+      width: 100%;
+    }
+    
+    #projects-screenshot-nametag {
     }
 
     .projects-info {
