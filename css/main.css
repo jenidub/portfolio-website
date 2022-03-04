@@ -329,6 +329,14 @@ h3 {
   width: 100%;
 }
 
+#projects-screenshot-nametag {
+  padding-top: 30px;
+}
+
+#projects-screenshot-guess {
+  width: 98%;
+}
+
 .sticky-notes-info,
 .note-generator-info,
 .guess-the-word-info {
@@ -712,22 +720,25 @@ footer a {
     }
 
     /*== Projects Section ==*/
-    footer {
-      margin-bottom: 20px;
-      padding: 30px 20px;
-    }
-
     .projects h4 {
       font-size: 1.25em;
       padding: 10px 15px;
     }
 
-    #guess-screenshot,
-    #forward-screenshot {
-      width: 50%;
+    #projects-screenshot-nametag {
+      padding-top: 50px;
+    }
+
+    #projects-screenshot-guess {
+      width: 97%;
     }
 
     /*== Footer Section ==*/
+    footer {
+      margin-bottom: 20px;
+      padding: 30px 20px;
+    }
+
     footer h2 {
       font-size: 1.5em;
     }
